@@ -36,5 +36,5 @@ public class DBConnection1 {
 	public Connection getConnection() {
 		return connection;
 	}
-
 }
+

@@ -22,21 +22,17 @@ public class SearchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	// Database connection details
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/your_database";
-    private static final String DB_USER = "your_username";
-    private static final String DB_PASSWORD = "your_password";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/abc_restaurant_database";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "MKS@jay123";
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+    
     public SearchServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 String query = request.getParameter("query");
 
@@ -55,7 +51,7 @@ public class SearchServlet extends HttpServlet {
 	            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
 	            // Prepare SQL statement
-	            String sql = "SELECT * FROM items WHERE name LIKE ?";
+	            String sql = "SELECT * FROM items WHERE item LIKE ?";
 	            preparedStatement = connection.prepareStatement(sql);
 	            preparedStatement.setString(1, "%" + query + "%");
 
@@ -66,16 +62,16 @@ public class SearchServlet extends HttpServlet {
 	            out.println("<html><body>");
 	            out.println("<h1>Search Results</h1>");
 	            out.println("<table border='1'>");
-	            out.println("<tr><th>ID</th><th>Name</th><th>Description</th></tr>");
+	            out.println("<tr><th>ID</th><th>Item</th><th>Description</th></tr>");
 
 	            while (resultSet.next()) {
 	                int id = resultSet.getInt("id");
-	                String name = resultSet.getString("name");
+	                String item = resultSet.getString("item");
 	                String description = resultSet.getString("description");
 
 	                out.println("<tr>");
 	                out.println("<td>" + id + "</td>");
-	                out.println("<td>" + name + "</td>");
+	                out.println("<td>" + item + "</td>");
 	                out.println("<td>" + description + "</td>");
 	                out.println("</tr>");
 	            }
@@ -102,9 +98,6 @@ public class SearchServlet extends HttpServlet {
 	    }
 	
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

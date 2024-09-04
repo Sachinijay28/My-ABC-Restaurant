@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-<!DOCTYPE html>
+    
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,5 +74,11 @@
         <button onclick="window.location.href='checkout.jsp'">Proceed to Checkout</button>
         <p><a href="order-online.jsp">Back to Order Online </a></p>
     </div>
+</body>
+</html>
+
+ 
+
+
 </body>
 </html>

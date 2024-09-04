@@ -13,13 +13,6 @@ public class LoginDAO {
     private static final String USER = "root"; //  DB username
     private static final String PASSWORD = "MKS@jay123"; //  DB password
 
-    /**
-     * Validates user credentials and returns user type if valid.
-     * 
-     * @param username The username of the user.
-     * @param password The password of the user.
-     * @return User type if credentials are valid, otherwise null.
-     */
     public String authenticate(String username, String password) {
         String userType = null;
         String query = "SELECT usertype FROM login WHERE username = ? AND password = ?";

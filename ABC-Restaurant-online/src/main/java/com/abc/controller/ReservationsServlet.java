@@ -23,9 +23,7 @@ public class ReservationsServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 request.setAttribute("pageTitle", "Reservations");
 	        request.setAttribute("reservationDescription", "Book a table for your next visit.");
@@ -33,9 +31,7 @@ public class ReservationsServlet extends HttpServlet {
 	        // Forward the request to the reservations.jsp page
 	        request.getRequestDispatcher("/WEB-INF/jsp/reservations.jsp").forward(request, response);
 	    }
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

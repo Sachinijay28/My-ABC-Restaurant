@@ -2,23 +2,23 @@ package com.abc.model;
 
 public class Menu {
 	public class MenuItem {
-	    private String name;
+	    private String item;
 	    private double price;
 
 	    // Constructor
-	    public MenuItem(String name, double price) {
-	        this.name = name;
+	    public MenuItem(String item, double price) {
+	        this.item = item;
 	        this.price = price;
 	    }
 
-	    // Getter for name
+	    // Getter for item
 	    public String getName() {
-	        return name;
+	        return item;
 	    }
 
-	    // Setter for name
-	    public void setName(String name) {
-	        this.name = name;
+	    // Setter for item
+	    public void setName(String item) {
+	        this.item = item;
 	    }
 
 	    // Getter for price

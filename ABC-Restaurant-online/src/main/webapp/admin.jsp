@@ -86,9 +86,9 @@
         <h2>Welcome, Admin!</h2>
         <p>Select an option below to manage the system:</p>
         <ul>
-            <li><a href="viewReservations.jsp">View Reservations</a></li>
-            <li><a href="manageUsers.jsp">Manage Users</a></li>
-            <li><a href="updateMenu.jsp">Update Menu</a></li>
+            <li><a href="viewreservations.jsp">View Reservations</a></li>
+            <li><a href="manageusers.jsp">Manage Users</a></li>
+            <li><a href="updatemenu.jsp">Update Menu</a></li>
         </ul>
     </div>
 </div>

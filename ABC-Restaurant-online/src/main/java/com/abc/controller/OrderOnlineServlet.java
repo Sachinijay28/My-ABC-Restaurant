@@ -23,9 +23,7 @@ public class OrderOnlineServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 request.setAttribute("pageTitle", "Order Online");
 	        request.setAttribute("orderDescription", "Select your items and place your order online.");
@@ -44,9 +42,6 @@ public class OrderOnlineServlet extends HttpServlet {
 	        request.getRequestDispatcher("/WEB-INF/jsp/orderonline.jsp").forward(request, response);
 	    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

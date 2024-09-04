@@ -111,6 +111,8 @@
 
             <input type="submit" value="Book Reservation">
         </form>
+      
+    
     </div>
 </body>
 </html>

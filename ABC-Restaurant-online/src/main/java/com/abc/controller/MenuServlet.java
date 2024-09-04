@@ -36,6 +36,7 @@ public class MenuServlet extends HttpServlet {
         List<Menu> MainCourseprices = MenuDAO.getMainCourseItems();
         List<Menu> appetizerprices = MenuDAO.getAppetizerItems();
         
+        
         // Set the menu items as request attributes
         request.setAttribute("mainCourseItems", mainCourseItems);
         request.setAttribute("appetizerItems", appetizerItems);
