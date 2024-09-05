@@ -14,6 +14,16 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+  
+  <dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-junit-jupiter</artifactId>
+    <version>5.13.0</version>
+    <scope>test</scope>
+  </dependency>
+    
+    
   </dependencies>
   <build>
     <finalName>ABC-Restaurant-online</finalName>

@@ -85,7 +85,7 @@
         <h2>Welcome, Staff!</h2>
         <p>Select an option below to manage the system:</p>
         <ul>
-            <li><a href="viewReservations.jsp">View Reservations</a></li>
+            <li><a href="viewreservations.jsp">View Reservations</a></li>
             <li><a href="viewqueries.jsp">View Queries</a></li>
         </ul>
     </div>

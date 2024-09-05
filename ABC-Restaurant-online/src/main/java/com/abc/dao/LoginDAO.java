@@ -12,6 +12,8 @@ public class LoginDAO {
     private static final String URL = "jdbc:mysql://localhost:3306/abc_restaurant_database"; //  DB URL
     private static final String USER = "root"; //  DB username
     private static final String PASSWORD = "MKS@jay123"; //  DB password
+    
+    
 
     public String authenticate(String username, String password) {
         String userType = null;

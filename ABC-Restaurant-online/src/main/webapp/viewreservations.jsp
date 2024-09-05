@@ -36,17 +36,17 @@
         <tbody>
            
              <tr>
-                    <td>${reservation.id}</td>
-                    <td>${reservation.name}</td>
-                    <td>${reservation.email}</td>
-                    <td>${reservation.phoneNumber}</td>
-                    <td>${reservation.reservationDate}</td>
-                    <td>${reservation.reservationTime}</td>
-                    <td>${reservation.numberOfGuests}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
            
         </tbody>
     </table>
-    <a href="admin.jsp">Back to Admin Portal</a>
+ 
 </body>
 </html>

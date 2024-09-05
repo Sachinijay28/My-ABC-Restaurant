@@ -13,12 +13,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-
-
-
-/**
- * Servlet implementation class RegisterServlet
- */
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -71,7 +65,7 @@ public class RegisterServlet extends HttpServlet {
                 // Registration successful
                 HttpSession session = request.getSession();
                 session.setAttribute("message", "Registration successful!");
-                response.sendRedirect("success.jsp"); // Redirect to a success page
+                response.sendRedirect("home.jsp"); // Redirect to a home page
             } else {
                 // Registration failed
                 HttpSession session = request.getSession();

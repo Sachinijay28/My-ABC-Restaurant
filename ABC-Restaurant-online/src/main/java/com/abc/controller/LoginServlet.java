@@ -13,9 +13,7 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
     
-    
-  
-    public LoginServlet() {
+   public LoginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -64,8 +62,7 @@ public class LoginServlet extends HttpServlet {
 
     // A simple method to simulate user authentication
     private boolean authenticate(String username, String password, String usertype) {
-        // For demonstration purposes, a static check
-        // In a real application, replace this with database verification
+    
         return ("user".equals(username) && "userpass".equals(password) && "user".equals(usertype))
         	||	("admin".equals(username) && "adminpass".equals(password) && "admin".equals(usertype))
             || ("staff".equals(username) && "staffpass".equals(password) && "staff".equals(usertype))
