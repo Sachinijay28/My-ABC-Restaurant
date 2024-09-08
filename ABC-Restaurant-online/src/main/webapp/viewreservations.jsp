@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>View Reservations</title>
@@ -10,43 +11,51 @@
             width: 100%;
             border-collapse: collapse;
         }
-        table, th, td {
-            border: 1px solid black;
-        }
         th, td {
+            border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <h1>Reservations List</h1>
-    <table>
-        <thead>
+   
+
+    <div class="container">
+        <h1>View Reservations</h1>
+       
+        
+        <table>
             <tr>
-                <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Phone Number</th>
-                <th>Reservation Date</th>
-                <th>Reservation Time</th>
-                <th>Number of Guests</th>
+                <th>Phone</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Guests</th>
+                <th>Actions</th>
             </tr>
-        </thead>
-        <tbody>
-           
-             <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+            <c:forEach var="reservation" items="${reservations}">
+                <tr>
+                    <td>${reservation.name}</td>
+                    <td>${reservation.email}</td>
+                    <td>${reservation.phone}</td>
+                    <td>${reservation.date}</td>
+                    <td>${reservation.time}</td>
+                    <td>${reservation.guests}</td>
+                    <td>
+                        <a href="ReservationsServlet?action=edit&id=${reservation.id}">Edit</a>
+                        <a href="ReservationsServlet?action=delete&id=${reservation.id}" onclick="return confirm('Are you sure you want to delete this reservation?')">Delete</a>
+                    </td>
                 </tr>
-           
-        </tbody>
-    </table>
- 
+            </c:forEach>
+        </table>
+        
+       
+    </div>
 </body>
 </html>
+    

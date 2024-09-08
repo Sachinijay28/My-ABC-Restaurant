@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.abc.dao.ContactDAO;
+import com.abc.model.Contact;
+
+
 @WebServlet("/contact")
 public class ContactServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -23,22 +27,26 @@ public class ContactServlet extends HttpServlet {
 	
    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // Retrieve form parameters
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-        String contactNumber = request.getParameter("contactNumber");
-        String message = request.getParameter("message");
-        
-        // Process the form data
-      
-        System.out.println("Name: " + name);
-        System.out.println("Email: " + email);
-        System.out.println("Contact Number: " + contactNumber);
-        System.out.println("Message: " + message);
-        
-        // Redirect  to the contact page
-        response.sendRedirect("contact.jsp");
-    }
+	// Retrieve form data
+       String name = request.getParameter("name");
+       String email = request.getParameter("email");
+       String contactNumber = request.getParameter("contactNumber");
+       String message = request.getParameter("message");
+
+       // Create a Contact object
+       Contact contact = new Contact(name, email, contactNumber, message);
+
+       // Save the contact using ContactDAO
+       ContactDAO contactDAO = new ContactDAO();
+       boolean isSaved = contactDAO.saveContact(contact);
+
+       // Redirect based on save success or failure
+       if (isSaved) {
+           response.sendRedirect("viewqueries.jsp");
+       } else {
+           response.sendRedirect("contact.jsp");
+       }
+   }
 }
 
 

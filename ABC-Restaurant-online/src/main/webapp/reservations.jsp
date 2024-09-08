@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,7 +91,9 @@
         We look forward to hosting you and providing exceptional service.
         if you have any special requests or need assistance,feel free to contact us directly.</p>
        
-       <form action="process-reservation" method="post">
+      
+          <form action="ReservationsServlet" method="post">
+            <input type="hidden" name="action" value="add">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
