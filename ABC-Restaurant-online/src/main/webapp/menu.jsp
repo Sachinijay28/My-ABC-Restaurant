@@ -108,33 +108,73 @@
   <tr>
     <td>Butter Chicken Rice</td>
     <td>Rs.1500</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td>
+        <form action="addToCart" method="post">
+           <input type="hidden" name="itemId" value="1">
+           <input type="hidden" name="itemName" value="Butter Chicken Rice">
+           <input type="hidden" name="price" value="1500">
+            <input type="submit" value="Add to Cart">
+        </form>
+    </td>
   </tr>
   <tr>
     <td>Chicken Biriyani</td>
     <td>RS. 1300</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+            <input type="hidden" name="itemId" value="2">
+            <input type="hidden" name="itemName" value="Chicken Biriyani">
+            <input type="hidden" name="price" value="1300">
+            <input type="submit" value="Add to Cart">
+            </form>
+    </td>
   </tr>
   <tr>
     <td>Veg Biriyani</td>
     <td>Rs. 1000</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td>
+    <form action="addToCart" method="post">
+         <input type="hidden" name="itemId" value="3">
+         <input type="hidden" name="itemName" value="Veg Biriyani">
+         <input type="hidden" name="price" value="1000">
+          <input type="submit" value="Add to Cart">
+      </form>
+    </td>
   </tr>
   
   <tr>
     <td>Cheese Burger</td>
     <td>Rs. 1500</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td>
+    <form action="addToCart" method="post">
+        <input type="hidden" name="itemId" value="4">
+        <input type="hidden" name="itemName" value="Cheese Burger">
+        <input type="hidden" name="price" value="1500">
+         <input type="submit" value="Add to Cart">
+        </form>
+    </td>
   </tr>
   <tr>
     <td>Chicken Burger</td>
     <td>Rs. 1300</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td>
+    <form action="addToCart" method="post">
+         <input type="hidden" name="itemId" value="5">
+          <input type="hidden" name="itemName" value="Chicken Burger">
+          <input type="hidden" name="price" value="1300">
+          <input type="submit" value="Add to Cart">
+     </form>
+    </td>
   </tr>
   <tr>
     <td>Cheese Sandwich</td>
     <td>Rs. 800</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+          <input type="hidden" name="itemId" value="6">
+          <input type="hidden" name="itemName" value="Cheese Sandwich">
+          <input type="hidden" name="price" value="800">
+          <input type="submit" value="Add to Cart">
+          </form>
+    </td>
   </tr>
   
 </table>
@@ -148,22 +188,46 @@
   <tr>
     <td>Fruit Salad</td>
     <td>Rs. 450</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+           <input type="hidden" name="itemId" value="7">
+           <input type="hidden" name="itemName" value="Fruit Salad">
+           <input type="hidden" name="price" value="450">
+           <input type="submit" value="Add to Cart">
+           </form>
+           </td>
   </tr>
   <tr>
     <td>Cocktails</td>
     <td>Rs. 500</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+           <input type="hidden" name="itemId" value="8">
+           <input type="hidden" name="itemName" value="Cocktails">
+           <input type="hidden" name="price" value="500">
+           <input type="submit" value="Add to Cart">
+        </form>
+      </td>
   </tr>
   <tr>
     <td>Nuggets</td>
     <td>Rs. 400</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+            <input type="hidden" name="itemId" value="9">
+            <input type="hidden" name="itemName" value="Nuggets">
+            <input type="hidden" name="price" value="400">
+            <input type="submit" value="Add to Cart">
+         </form>
+     </td>
   </tr>
   <tr>
-    <td>French FRies</td>
+    <td>French Fries</td>
     <td>Rs. 400</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+            <input type="hidden" name="itemId" value="10">
+            <input type="hidden" name="itemName" value="French Fries">
+            <input type="hidden" name="price" value="400">
+            <input type="submit" value="Add to Cart">
+        </form>
+     </td>
   </tr>
   
 </table>
@@ -178,17 +242,35 @@
   <tr>
     <td>Milk Shake</td>
     <td>Rs. 600</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+         <input type="hidden" name="itemId" value="11">
+         <input type="hidden" name="itemName" value="Milk Shake">
+         <input type="hidden" name="price" value="600">
+         <input type="submit" value="Add to Cart">
+       </form>
+     </td>
   </tr>
   <tr>
     <td>Iced Tea</td>
     <td>Rs. 500</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+            <input type="hidden" name="itemId" value="12">
+            <input type="hidden" name="itemName" value="Iced Tea">
+            <input type="hidden" name="price" value="500">
+           <input type="submit" value="Add to Cart">
+        </form>
+     </td>
   </tr>
   <tr>
     <td>Orange Juice</td>
     <td>Rs. 400</td>
-    <td><a href="mycart.jsp">Add to Cart</a></td>
+    <td><form action="addToCart" method="post">
+             <input type="hidden" name="itemId" value="13">
+             <input type="hidden" name="itemName" value="Orange Juice">
+             <input type="hidden" name="price" value="400">
+             <input type="submit" value="Add to Cart">
+        </form>
+    </td>
   </tr>
 </table>
    </div>

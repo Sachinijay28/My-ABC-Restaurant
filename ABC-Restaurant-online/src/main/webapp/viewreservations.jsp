@@ -40,12 +40,12 @@
             </tr>
             <c:forEach var="reservation" items="${reservations}">
                 <tr>
-                    <td>${reservation.name}</td>
-                    <td>${reservation.email}</td>
-                    <td>${reservation.phone}</td>
-                    <td>${reservation.date}</td>
-                    <td>${reservation.time}</td>
-                    <td>${reservation.guests}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td>
                         <a href="ReservationsServlet?action=edit&id=${reservation.id}">Edit</a>
                         <a href="ReservationsServlet?action=delete&id=${reservation.id}" onclick="return confirm('Are you sure you want to delete this reservation?')">Delete</a>

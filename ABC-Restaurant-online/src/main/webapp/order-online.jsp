@@ -58,7 +58,7 @@
     <nav>
         <a href="order-online.jsp" class="nav-button">Order Online</a>
         <a href="home.jsp" class="nav-button">Home</a>
-        <a href="my-cart.jsp" class="nav-button">My Cart</a>
+        <a href="cart.jsp" class="nav-button">My Cart</a>
         <a href="search.jsp" class="nav-button">Search</a>
         <a href="login.jsp" class="nav-button">Login</a>
         
